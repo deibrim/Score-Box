@@ -79,7 +79,7 @@ export default function DashboardHome() {
         </Typography>
         <Grid container spacing={3}>
           {EventData.map((data, index) => (
-            <Grid key={index} item md={4}>
+            <Grid key={index} item xs={12} sm={6} md={4}>
               <EventCard data={data} />
             </Grid>
           ))}

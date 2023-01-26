@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Outlet } from 'react-router-dom';
 // material
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 //
 import DashboardNavbar from './DashboardNavbar';
@@ -48,7 +48,7 @@ export default function DashboardLayout() {
       <DashboardSidebar isOpenSidebar={open} onCloseSidebar={() => setOpen(false)} />
       <MainStyle>
         <Outlet />
-
+        <Box sx={{ flexGrow: 1 }} />
         <FooterStyle>
           <Typography variant="caption" component="p">
             © 2023 ScoreBox
