@@ -157,10 +157,8 @@ export default function DashboardSidebarRight({ isOpenSidebar, onCloseSidebar })
         width: {
           lg: isCollapse ? COLLAPSE_WIDTH : DRAWER_WIDTH,
         },
-        right: 0,
         ...(collapseClick && {
           position: 'absolute',
-          right: 0,
         }),
       }}
     >
@@ -173,7 +171,6 @@ export default function DashboardSidebarRight({ isOpenSidebar, onCloseSidebar })
           }}
         >
           {renderContent}
-          Hello
         </Drawer>
       </MHidden>
 
@@ -201,7 +198,6 @@ export default function DashboardSidebarRight({ isOpenSidebar, onCloseSidebar })
           }}
         >
           {renderContent}
-          Hello
         </Drawer>
       </MHidden>
     </RootStyle>
